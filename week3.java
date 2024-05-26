@@ -61,32 +61,32 @@ public class AbdullahK extends LinearOpMode {
         // Wait for the game to start (driver presses PLAY)
         waitForStart();
 
-        //Power front right motor, wait 10 seconds, unpower front right motor
+        //Power front right motor, wait 0.50 seconds, unpower front right motor
         while (opModeIsActive()) {
             // //Forwards
-            frontLeft.setPower(1);
-            frontRight.setPower(-1);
-            backLeft.setPower(1);
-            backRight.setPower(-1);
+            frontLeft.setPower(0.5);
+            frontRight.setPower(-0.5);
+            backLeft.setPower(0.5);
+            backRight.setPower(-0.5);
             sleep(500);
             //Strafe right
-            frontLeft.setPower(1);
-            frontRight.setPower(1);
-            backLeft.setPower(1);
-            backRight.setPower(1);
+            frontLeft.setPower(0.5);
+            frontRight.setPower(0.5);
+            backLeft.setPower(0.5);
+            backRight.setPower(0.5);
             sleep(500);
-            // //Backwards
-            frontLeft.setPower(-1);
-            frontRight.setPower(1);
-            backLeft.setPower(-1);
-            backRight.setPower(1);
-            sleep(500);
-            // //Strafe left
-            frontLeft.setPower(-1);
-            frontRight.setPower(-1);
-            backLeft.setPower(-1);
-            backRight.setPower(-1);
-            sleep(500);
+            // // //Backwards
+            // frontLeft.setPower(-0.5);
+            // frontRight.setPower(0.5);
+            // backLeft.setPower(-0.5);
+            // backRight.setPower(0.5);
+            // sleep(500);
+            // // //Strafe left
+            // frontLeft.setPower(0.5);
+            // frontRight.setPower(0.5);
+            // backLeft.setPower(0.5);
+            // backRight.setPower(0.5);
+            // sleep(500);
         }
         
     }
