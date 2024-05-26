@@ -69,7 +69,7 @@ public class AbdullahK extends LinearOpMode {
             backLeft.setPower(0.5);
             backRight.setPower(-0.5);
             sleep(500);
-            //Strafe right
+            //Turn right
             frontLeft.setPower(0.5);
             frontRight.setPower(0.5);
             backLeft.setPower(0.5);
